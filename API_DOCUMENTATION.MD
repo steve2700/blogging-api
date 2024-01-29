@@ -185,9 +185,3 @@ Delete an existing blog post.
     "message": "Post deleted successfully."
   }
 ```
-
-
-
-
-
-
