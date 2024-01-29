@@ -161,7 +161,8 @@ Update an existing blog post.
     "content": "This is an updated blog post.",
     "imageUrl": "https://example.com/updated-image.jpg"
   }
--**RESPONSE:**`{
+-**RESPONSE:**
+```{
   "post": {
     "_id": "post_id",
     "title": "Updated Post Title",
@@ -171,7 +172,21 @@ Update an existing blog post.
     "updatedAt": "2024-01-29T13:10:00.000Z"
   }
 }
-`
+```
+### Delete Post
+
+Delete an existing blog post.
+
+- **Endpoint:** `/api/posts/{postId}`
+- **Method:** `DELETE`
+- **Response:**
+  ```json
+  {
+    "message": "Post deleted successfully."
+  }
+```
+
+
 
 
 
