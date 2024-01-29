@@ -98,5 +98,81 @@ Create a new blog post.
 	}
 }
 ```
+## Posts
+
+### Get Single Post
+
+Retrieve details of a single blog post.
+
+- **Endpoint:** `/api/posts/{postId}`
+- **Method:** `GET`
+- **Response:**
+  ```json
+  {
+    "post": {
+      "_id": "post_id",
+      "title": "Example Post",
+      "content": "This is a sample blog post.",
+      "imageUrl": "https://example.com/image.jpg",
+      "createdAt": "2024-01-29T13:06:44.161Z",
+      "updatedAt": "2024-01-29T13:06:44.161Z"
+    }
+  }
+```
+### List Posts
+
+Retrieve a list of all blog posts.
+
+- **Endpoint:** `/api/posts`
+- **Method:** `GET`
+- **Response:**
+  ```json
+  {
+    "posts": [
+      {
+        "_id": "post_id1",
+        "title": "Example Post 1",
+        "content": "This is a sample blog post.",
+        "imageUrl": "https://example.com/image1.jpg",
+        "createdAt": "2024-01-29T13:06:44.161Z",
+        "updatedAt": "2024-01-29T13:06:44.161Z"
+      },
+      {
+        "_id": "post_id2",
+        "title": "Example Post 2",
+        "content": "Another sample blog post.",
+        "imageUrl": "https://example.com/image2.jpg",
+        "createdAt": "2024-01-29T13:08:00.000Z",
+        "updatedAt": "2024-01-29T13:08:00.000Z"
+      }
+    ]
+  }
+```
+### Update Post
+
+Update an existing blog post.
+
+- **Endpoint:** `/api/posts/{postId}`
+- **Method:** `PUT`
+- **Request Body:**
+  ```json
+  {
+    "title": "Updated Post Title",
+    "content": "This is an updated blog post.",
+    "imageUrl": "https://example.com/updated-image.jpg"
+  }
+-**RESPONSE:**`{
+  "post": {
+    "_id": "post_id",
+    "title": "Updated Post Title",
+    "content": "This is an updated blog post.",
+    "imageUrl": "https://example.com/updated-image.jpg",
+    "createdAt": "2024-01-29T13:06:44.161Z",
+    "updatedAt": "2024-01-29T13:10:00.000Z"
+  }
+}
+`
+
+
 
 
