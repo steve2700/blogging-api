@@ -22,14 +22,6 @@ const userSchema = new mongoose.Schema({
     required: true,
     minlength: 6,
   },
-  profile: {
-    type: String,
-    default: 'No profile information available',
-  },
-  profileImageUrl: {
-    type: String,
-    default: 'null',
-  },
   role: {
     type: String,
     enum: ['user', 'admin'],
