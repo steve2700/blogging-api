@@ -58,8 +58,8 @@ EMAIL_APP_PASSWORD=
 3.Run the application:
 
 ```npm start```
-### API Documentation
-
+## API Documentation
+https://github.com/steve2700/blogging-api/blob/dev/API_DOCUMENTATION.MD
 
 
 
