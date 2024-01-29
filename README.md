@@ -59,7 +59,9 @@ EMAIL_APP_PASSWORD=
 
 ```npm start```
 ## API Documentation
-https://github.com/steve2700/blogging-api/blob/dev/API_DOCUMENTATION.MD
+
+Explore the API endpoints and learn how to integrate with the Blog Application by referring to our [API Documentation](https://github.com/steve2700/blogging-api/blob/dev/API_DOCUMENTATION.MD).
+
 
 
 
