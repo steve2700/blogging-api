@@ -1,6 +1,6 @@
 const Post = require('../models/post.model');
 const authMiddleware = require('../middlewares/auth.Middleware');
-
+const User = require('../models/user.model');
 const postController = {
   // Create Post
   createPost: [authMiddleware, async (req, res) => {
