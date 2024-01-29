@@ -2,13 +2,22 @@ const bcrypt = require('bcryptjs');
 const User = require('../models/user.model');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
-
+const nodemailer = require('nodemailer');
 dotenv.config();
 
 // Function to generate JWT token
 const generateToken = (user) => {
   return jwt.sign({ _id: user._id, username: user.username, email: user.email }, process.env.SECRET_KEY, { expiresIn: '1h' });
 };
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL_USERNAME,
+    pass: process.env.EMAIL_PASSWORD,
+    pass: process.env.EMAIL_APP_PASSWORD,
+  },
+});
+
 
 const userController = {
   // Signup

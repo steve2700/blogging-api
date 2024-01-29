@@ -32,7 +32,7 @@ db.once('open', () => {
 // Routes
 app.use('/api/users', userRoutes);
 // use this for post
-app.use('/api/posts', postRoutes);
+app.use('/api', postRoutes);
 
 
 // Error handling middleware
