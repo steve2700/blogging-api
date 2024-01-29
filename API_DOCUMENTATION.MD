@@ -1,5 +1,15 @@
-# Blogging API Documentation
+## Blogging API Documentation
 
+## Table Of Content
+ [Users](#users)
+   - [Signup](#signup)
+   - [Login](#login)
+ [Posts](#posts)
+   - [Create Post](#create-post)
+   - [Get Single Post](#get-single-post)
+   - [List Posts](#list-posts)
+   - [Update Post](#update-post)
+   - [Delete Post](#delete-post)
 ## Overview
 
 The Blogging API provides endpoints for managing blog posts and user authentication. This documentation outlines the available endpoints, their functionalities, and example requests.
